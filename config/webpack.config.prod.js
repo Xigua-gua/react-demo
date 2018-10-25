@@ -101,12 +101,9 @@ const getStyleLoaders = (cssOptions, preProcessor) => {
 // The development configuration is different and lives in a separate file.
 module.exports = {
   mode: 'production',
-  externals: {
-    lodash : {
-      commonjs: "lodash",
-      amd: "lodash",
-      root: "_" // 指向全局变量
-    }
+  externals:{
+    'BMap':'BMap',
+    'BMapLib':'BMapLib'
   },
   // Don't attempt to continue if there are any errors.
   bail: true,

@@ -1,4 +1,7 @@
 import React, {Component} from 'react';
+import {
+  BrowserRouter,
+} from 'react-router-dom';
 import {increment, decrement, reset} from '../../redux/actions';
 
 import { connect } from 'react-redux'
@@ -13,6 +16,7 @@ class Counter extends Component {
   }
   render() {
       return (
+        <BrowserRouter basename='/counter'>
           <div>
               <div>当前计数为{this.props.counter_reducer.count}</div>
               <button onClick={() => this.props.actions.increment()}>自增
@@ -22,6 +26,7 @@ class Counter extends Component {
               <button onClick={() => this.props.actions.reset()}>重置
               </button>
           </div>
+        </BrowserRouter>
       )
   }
 }

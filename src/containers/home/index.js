@@ -1,4 +1,9 @@
 import React, {Component} from 'react';
+
+import {
+  BrowserRouter,
+} from 'react-router-dom';
+
 import difference from 'lodash/difference'
 import _ from 'lodash';
 
@@ -22,11 +27,13 @@ export default class Home extends Component {
 
     render() {
         return (
+          <BrowserRouter basename='/home'>
             <div>
-                this is home~<br/>
+                <h2>首页</h2><br/>
                 ss当前计数：{this.state.count}<br/>
                 <button onClick={() => this._handleClick()}>自增</button>
             </div>
+          </BrowserRouter>
         )
     }
 }

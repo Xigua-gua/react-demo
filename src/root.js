@@ -5,7 +5,7 @@ import createHistory from 'history/createBrowserHistory'
 import configureStore from './redux/configureStore'
 import './config.less'
 
-import Main from './containers/main.js'
+import Main from './containers/main'
 
 const history = createHistory()
 const store = configureStore(history)

@@ -71,8 +71,9 @@ const getStyleLoaders = (cssOptions, preProcessor) => {
 // It is focused on developer experience and fast rebuilds.
 // The production configuration is different and lives in a separate file.
 module.exports = {
-  externals: {
-    lodash : 'lodash'
+  externals:{
+    'BMap':'BMap',
+    'BMapLib':'BMapLib'
   },
   mode: 'development',
   // You may want 'eval' instead if you prefer to see the compiled output in DevTools.
