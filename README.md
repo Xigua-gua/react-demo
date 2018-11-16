@@ -3,7 +3,7 @@
 react redux react-redux react-router-redux  webpack4
 
 支持less, sass
-lodash插件
+安装lodash
  config中为webpack等配置文件
 
  assets里面是内部引用的图片
