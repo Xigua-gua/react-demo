@@ -20,9 +20,9 @@ export default class Home extends Component {
             count: ++this.state.count
         });
         let x = difference([1, 2], [1, 3])
-        console.log('x',x);
+        console.log('lodash difference',x);
         let w = _.chunk(['a', 'b', 'c', 'd'], 2);;
-        console.log('w',w);
+        console.log('chunk',w);
     }
 
     render() {

@@ -23,7 +23,6 @@ class Main extends Component {
       current: this.route[1] || 'home',
     }
     if (!ROUTES.includes(this.route[1])) {
-      console.log('dd');
       this.props.history.replace('home')
     }
   }
